@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+title: "Aspiration Cyber Intelligence Lab (A-CiL) Website"
+message: "If you use this website for reference, please cite it as below."
+authors:
+  - family-names: Chakraborty
+    given-names: Mohuya
+version: 1.0.0
+date-released: 2026-01-01
+---
+
+## 🔐 Intellectual Property & Usage
+
+- This repository is licensed under the **MIT License**, which applies **only to the website source code (HTML/CSS)**.
+- Research concepts, methodologies, consultancy engagements, lab projects, and institutional collaborations referenced on the website are **not open-sourced** unless explicitly stated.
+- All trademarks, institutional names, and affiliations remain the property of their respective owners.
+
+For details, see `DISCLAIMER.md`.
+
+---
+
+## 🤝 Institutional Context
+
+A-CiL operates under **Aspiration Trust** and engages in research, training, consultancy, and academic collaboration.
+
+Some projects and publications referenced on the website may have been conducted:
+- In collaboration with academic institutions
+- Under separate Centres of Excellence
+- Through formal MoUs and institutional agreements
+
+Such references are made for informational purposes and do not imply ownership transfer or exclusive institutional endorsement.
+
+---
+
+## 👤 Founder & Lead Researcher
+
+**Dr. Mohuya Chakraborty**  
+Founder & Lead Researcher, Aspiration Cyber Intelligence Lab  
+
+Professional profile and independently developed consultancy work are maintained separately and are linked from the website for reference only.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+See the `LICENSE` file for details.
+
+---
+
+## 📬 Contact
+
+For academic collaboration, consultancy, or institutional engagement:
+
+**Email:** trustaspiration@gmail.com  
+**Website:** https://github.com/your-username/your-repo-name
+
+---
+
+© 2026 Aspiration Trust | Aspiration Cyber Intelligence Lab (A-CiL)
