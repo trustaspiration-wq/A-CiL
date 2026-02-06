@@ -443,5 +443,65 @@ footer {
   color: var(--muted-text);
   font-style: italic;
 }
+/* ===== GOVERNANCE POP-UP CARD ===== */
+.governance-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.governance-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+  border: 1px solid #d6e0ef;
+  box-shadow: 0 12px 28px rgba(13, 71, 161, 0.12);
+  overflow: hidden;
+}
+
+/* Header band */
+.governance-title {
+  background: var(--primary-blue);
+  color: #ffffff;
+  padding: 14px 18px;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Body */
+.governance-body {
+  padding: 22px 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.governance-body p {
+  margin-bottom: 14px;
+}
+
+/* Divider */
+.governance-divider {
+  border: none;
+  border-top: 1px solid #d6e0ef;
+  margin: 18px 0;
+}
+
+/* Note text */
+.governance-note {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  font-style: italic;
+}
+
+/* Mobile safety */
+@media (max-width: 768px) {
+  .governance-card {
+    margin: 0 12px;
+  }
+}
+
 
 
