@@ -416,4 +416,32 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ===== HOW WE ENGAGE ===== */
+.engagement {
+  margin-top: 24px;
+}
+
+.engagement-text {
+  font-size: 0.95rem;
+  color: var(--dark-text);
+  margin-bottom: 10px;
+}
+
+.engagement-list {
+  margin: 8px 0 10px 18px;
+  padding: 0;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.engagement-list li {
+  margin-bottom: 4px;
+}
+
+.engagement-note {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  font-style: italic;
+}
+
 
