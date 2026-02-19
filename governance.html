@@ -1,4 +1,3 @@
-<!-- ===================== governance.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,75 +16,95 @@
 
 <div class="container">
 
-  <!-- SIDEBAR -->
+  <!-- ===== SIDEBAR ===== -->
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <img src="assets/images/logo.png" alt="AICIL Logo">
+      <img src="assets/images/logo.png" alt="A-CiL Logo">
     </div>
 
     <nav>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="projects.html">Lab Projects</a>
-      <a href="governance.html">Governance</a>
+      <a href="governance.html" class="active">Governance</a>
       <a href="legal.html">Legal & Compliance</a>
       <a href="contact.html">Contact</a>
     </nav>
   </aside>
 
-  <!-- CONTENT -->
-<main class="content">
+  <!-- ===== CONTENT ===== -->
+  <main class="content">
 
-  <section class="governance-wrapper">
+    <section>
+      <h2 class="section-title">Our Governance</h2>
+      <p>Learn about the leadership and governance principles guiding A-CiL.</p>
+      <button class="cta-button" onclick="openGovernanceModal()">View Governance Structure</button>
+    </section>
 
-    <div class="governance-card">
-      <h2 class="governance-title">Governance Structure</h2>
+    <!-- ===== GOVERNANCE MODAL ===== -->
+    <div id="governanceModal" class="modal-overlay">
 
-      <div class="governance-body">
+      <div class="governance-card modal-card">
+        <span class="close-btn" onclick="closeGovernanceModal()">&times;</span>
+        <h2 class="governance-title">Governance Structure</h2>
 
-        <p>
-          <strong>Founder & Lead Researcher:</strong><br>
-          Dr. Mohuya Chakraborty, PhD (Engg), Chartered Manager (CMI Level 5 – UK)
-        </p>
+        <div class="governance-body">
+          <p>
+            <strong>Founder & Lead Researcher:</strong><br>
+            Dr. Mohuya Chakraborty, PhD (Engg), Chartered Manager (CMI Level 5 – UK)
+          </p>
 
-        <p>
-          <strong>Co-Founder:</strong><br>
-          Mr. Jayanta Chakraborty, MBA (Systems)
-        </p>
+          <p>
+            <strong>Co-Founder:</strong><br>
+            Mr. Jayanta Chakraborty, MBA (Systems)
+          </p>
 
-        <p>
-          <strong>Chief Executive Officer:</strong><br>
-          Ms. Rheya Chakraborty, MBA (Marketing)
-        </p>
+          <p>
+            <strong>Chief Executive Officer:</strong><br>
+            Ms. Rheya Chakraborty, MBA (Marketing)
+          </p>
 
-        <hr class="governance-divider">
+          <hr class="governance-divider">
 
-        <p class="governance-note">
-          Aspiration Cyber Intelligence Lab (A-CiL) operates under
-          <strong>Aspiration Trust</strong>, adhering to principles of transparent
-          governance, academic integrity, ethical research conduct, and
-          responsible technology development.
-        </p>
-
+          <p class="governance-note">
+            Aspiration Cyber Intelligence Lab (A-CiL) operates under
+            <strong>Aspiration Trust</strong>, adhering to principles of transparent
+            governance, academic integrity, ethical research conduct, and
+            responsible technology development.
+          </p>
+        </div>
       </div>
+
     </div>
 
-  </section>
-
-</main>
-
+  </main>
 
 </div>
 
 <footer>
   <p style="font-size:0.75rem;color:#777;">
-  Website code is open-source under MIT License. Content and research
-  remain proprietary unless explicitly stated.
-</p>
+    Website code is open-source under MIT License. Content and research remain proprietary unless explicitly stated.
+  </p>
   <p><br>© 2026 Aspiration Trust | A-CiL — Aspiration Cyber Intelligence Lab. All rights reserved.</br></p>
 </footer>
 
+<script>
+  function openGovernanceModal() {
+    document.getElementById("governanceModal").style.display = "flex";
+  }
+
+  function closeGovernanceModal() {
+    document.getElementById("governanceModal").style.display = "none";
+  }
+
+  // Close modal when clicking outside the card
+  window.onclick = function(event) {
+    const modal = document.getElementById("governanceModal");
+    if(event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
 </body>
 </html>
-
-
