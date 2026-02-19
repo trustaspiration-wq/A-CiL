@@ -19,7 +19,7 @@
   <!-- ===== SIDEBAR ===== -->
   <aside class="sidebar">
     <div class="sidebar-logo">
-      <img src="assets/images/logo.png" alt="AICIL Logo">
+      <img src="assets/images/logo.png" alt="A-CiL Logo">
     </div>
 
     <nav>
@@ -28,65 +28,104 @@
       <a href="projects.html">Lab Projects</a>
       <a href="governance.html">Governance</a>
       <a href="legal.html">Legal & Compliance</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </aside>
+<!-- ===== SIDEBAR CTA BLOCK ===== -->
+<div class="sidebar-cta">
+
+  <h3>Free Resource</h3>
+  <p style="font-size:0.85rem; line-height:1.4;">
+    AI Security & Cyber Risk Checklist (2026 Edition)
+  </p>
+
+  <a href="assets/docs/A-CiL_AI_Security_Checklist_2026.pdf" 
+     class="sidebar-btn" target="_blank">
+     Download PDF
+  </a>
+
+  <hr style="margin:15px 0;">
+
+  <h3>Need Immediate Support?</h3>
+  <a href="contact.html" class="sidebar-btn secondary">
+     Book Strategy Call
+  </a>
+
+</div>
 
   <!-- ===== CONTENT ===== -->
-<main class="content">
+  <main class="content">
 
-  <section class="contact-wrapper">
+    <section>
+      <h2 class="section-title">Get in Touch</h2>
+      <p>If you are interested in consultancy, research collaboration, or cyber advisory, click the button below to open our contact form.</p>
+      <button class="cta-button" onclick="openContactModal()">Contact A-CiL</button>
+    </section>
 
-    <div class="contact-card">
+    <!-- ===== CONTACT MODAL ===== -->
+    <div id="contactModal" class="modal-overlay">
 
-      <h2 class="contact-title">Contact Information</h2>
+      <div class="contact-card modal-card">
+        <span class="close-btn" onclick="closeContactModal()">&times;</span>
+        <h2 class="contact-title">Contact Us</h2>
 
-      <div class="contact-body">
+        <div class="contact-body">
+          <p>Reach out to A-CiL for consultations, advisory, or collaborations.</p>
 
-        <p>
-          <strong>Email</strong><br>
-          <a href="mailto:trustaspiration@gmail.com">
-            trustaspiration@gmail.com
-          </a>
-        </p>
+          <p><strong>Email</strong><br>
+          <a href="mailto:trustaspiration@gmail.com">trustaspiration@gmail.com</a>
+          </p>
 
-        <p>
-          <strong>Registered Address</strong><br>
-          SF1, 10G, Sunrise Point,<br>
-          Action Area 2C, New Town,<br>
-          Kolkata 700157, India
-        </p>
+          <p>
+            <strong>Registered Address</strong><br>
+            SF1, 10G, Sunrise Point,<br>
+            Action Area 2C, New Town,<br>
+            Kolkata 700157, India
+            <br><strong>Phone:</strong> +91 7044567467 | +91 9836310643</br>
+          </p>
 
-        <p class="contact-note">
-          Global collaborations supported
-        </p>
+          <p class="contact-note">
+            Global collaborations supported | All enquiries are handled confidentially.
+          </p>
 
-        <hr class="contact-divider">
+          <hr class="contact-divider">
 
-        <p class="contact-guidance">
-          For research collaboration, academic partnerships,
-          consultancy, and public-sector engagements,
-          please initiate contact via email.
-        </p>
-
+          <p class="contact-guidance">
+            For research collaboration, academic partnerships, consultancy, and public-sector engagements, please initiate contact via email.
+          </p>
+        </div>
       </div>
 
     </div>
 
-  </section>
-
-</main>
-
+  </main>
 
 </div>
 
 <footer>
- <p style="font-size:0.75rem;color:#777;">
-  Website code is open-source under MIT License. Content and research
-  remain proprietary unless explicitly stated.
-</p>
+  <p style="font-size:0.75rem;color:#777;">
+    Website code is open-source under MIT License. Content and research remain proprietary unless explicitly stated.
+  </p>
   <p><br>© 2026 Aspiration Trust | A-CiL — Aspiration Cyber Intelligence Lab. All rights reserved.</br></p>
 </footer>
+
+<script>
+  function openContactModal() {
+    document.getElementById("contactModal").style.display = "flex";
+  }
+
+  function closeContactModal() {
+    document.getElementById("contactModal").style.display = "none";
+  }
+
+  // Close modal when clicking outside the card
+  window.onclick = function(event) {
+    const modal = document.getElementById("contactModal");
+    if(event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
